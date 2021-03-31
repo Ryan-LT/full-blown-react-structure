@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "strict": true,
+    "target": "es5",
+    "lib": ["es5", "es6", "dom"],
+    "jsx": "react",
+    "sourceMap": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@api": ["./src/services/api"],
+      "@hooks": ["./src/hooks"],
+      "@store": ["./src/store"],
+      "@tests": ["./src/tests"],
+      "@types": ["./src/types"],
+      "@router": ["./src/router"],
+      "@pages": ["./src/pages"],
+      "@helpers": ["./src/helpers"],
+      "@services": ["./src/services"],
+      "@components": ["./src/components"],
+      "@constants": ["./src/constants"],
+      "@assets/*": ["./src/assets/*"]
+    }
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./tests/**/*.tsx"],
+  "exclude": ["./node_modules/**/*", "./dist/**/*", "./build/**/*", "./config"]
+}
