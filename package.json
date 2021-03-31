@@ -4,7 +4,12 @@
   "description": "Simple weather forecast app using external api",
   "main": "index.tsx",
   "scripts": {
-    "test": "npm run test",
+    "dev": "NODE_ENV=development webpack serve --hot --config config/webpack.dev.ts",
+    "build": "webpack --mode production --config config/webpack.prod.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npm run lint -- --fix",
     "postinstall": "husky install"
   },
   "repository": {
