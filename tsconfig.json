@@ -15,7 +15,7 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "@api": ["./src/services/api"],
+      "@api": ["./src/api"],
       "@hooks": ["./src/hooks"],
       "@store": ["./src/store"],
       "@tests": ["./src/tests"],

@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 import { Provider } from 'react-redux';
 import { RouterProvider } from 'react-router5';
 import { RouterView } from '@components';
 import { createStore } from '@store';
+import { router, configureRouter } from '@router';
+import { configureClient, createApi } from '@api';
 import routes from './router/routes';
-import { router, configureRouter } from './router/create-router';
 
-export const store = createStore(router);
+const client = axios.create();
+configureClient(client);
+const api = createApi(client);
+
+export const store = createStore({ router, api });
 
 configureRouter(store);
 

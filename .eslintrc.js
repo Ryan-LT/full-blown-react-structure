@@ -15,13 +15,12 @@ module.exports = {
     'import/no-named-default': 'off',
     'import/no-unresolved': 'off',
     'implicit-arrow-linebreak': 'off',
-    'import/no-named-as-default': 0,
+    'import/no-named-as-default': 'off',
     'no-param-reassign': [
       'error',
       {
         props: true,
         ignorePropertyModificationsFor: [
-          'self',
           'req',
           'res',
           'acc',
@@ -29,6 +28,7 @@ module.exports = {
           'action',
           'api',
           'state',
+          'client',
         ],
       },
     ],
