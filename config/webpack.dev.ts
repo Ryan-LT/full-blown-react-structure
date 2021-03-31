@@ -5,7 +5,7 @@ import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 const config: webpack.Configuration = {
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: './src/index.tsx',
+  entry: './src/renderApp.tsx',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
     plugins: [new TsconfigPathsPlugin()],

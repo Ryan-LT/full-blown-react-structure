@@ -7,7 +7,7 @@ import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 
 const config: webpack.Configuration = {
   mode: 'production',
-  entry: './src/index.tsx',
+  entry: './src/renderApp.tsx',
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].[fullhash].bundle.js',

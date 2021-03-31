@@ -2,7 +2,7 @@
   "name": "simple-weather-forecast",
   "version": "1.0.0",
   "description": "Simple weather forecast app using external api",
-  "main": "index.tsx",
+  "main": "renderApp.tsx",
   "scripts": {
     "dev": "NODE_ENV=development webpack serve --hot --config config/webpack.dev.ts",
     "build": "webpack --mode production --config config/webpack.prod.ts",
