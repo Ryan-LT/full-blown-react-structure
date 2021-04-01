@@ -8,12 +8,14 @@ export const preloadDataMiddleware = (routes: Route[]): MiddlewareFactory => (
   { store },
 ): Middleware => async (toState, fromState, done) => {
   const { toActivate } = transitionPath(toState, fromState);
+  const promises: Promise<void>[] = [];
 
   toActivate.forEach((routeName) => {
     const route = routes.find((r) => r.name === routeName);
     if (route && route.preloadData) {
-      route.preloadData(store);
+      promises.push(route.preloadData(store));
     }
   });
+  await Promise.all(promises);
   done();
 };

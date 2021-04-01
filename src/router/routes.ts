@@ -15,5 +15,5 @@ export default routes;
 
 export interface Route extends Router5Route {
   Component: LoadableComponent<Record<string, unknown>>;
-  preloadData?: (store: Store, toState?: State) => void;
+  preloadData?: (store: Store, toState?: State) => Promise<void>;
 }
