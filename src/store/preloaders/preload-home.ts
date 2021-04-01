@@ -1,5 +1,5 @@
-import { Store, getHome } from '@store';
+import { Store, getDefaultForecast } from '@store';
 
 export const preloadHome = async ({ dispatch }: Store) => {
-  await dispatch(getHome());
+  await dispatch(getDefaultForecast());
 };

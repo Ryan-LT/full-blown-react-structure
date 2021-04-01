@@ -37,6 +37,13 @@ const config: webpack.Configuration = {
     ],
   },
   devServer: {
+    proxy: {
+      '/api': {
+        target: 'https://www.metaweather.com/api',
+        secure: false,
+        changeOrigin: true,
+      },
+    },
     historyApiFallback: true,
     open: true,
     compress: true,

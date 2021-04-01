@@ -12,14 +12,20 @@ export const createStore = (thunkExtraAguments: ThunkExtraAguments) =>
       home: homeReducer,
     },
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware({
-        thunk: { extraArgument: { thunkExtraAguments } },
+      getDefaultMiddleware<{
+        serializableCheck: boolean;
+        thunk: {
+          extraArgument: ThunkExtraAguments;
+        };
+      }>({
+        serializableCheck: false,
+        thunk: { extraArgument: thunkExtraAguments },
       }),
   });
 
-export type Store = ReturnType<typeof configureStore>;
+export type Store = ReturnType<typeof createStore>;
 export type State = ReturnType<typeof store.getState>;
 export type ThunkExtraAguments = { router: Router; api: Api };
-export type ThunkExtra = {
+export type ThunkApiConfig = {
   extra: ThunkExtraAguments;
 };
