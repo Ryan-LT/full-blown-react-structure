@@ -40,8 +40,6 @@
     "router5-transition-path": "^8.0.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/plugin-proposal-decorators": "^7.13.5",
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
     "@testing-library/dom": "^7.30.2",

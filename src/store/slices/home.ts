@@ -49,7 +49,8 @@ export const { reducer: homeReducer } = createSlice({
       state.error = 'There are some issues when getting data';
       state.isLoading = false;
     });
-    builder.addCase(getLocation.fulfilled, (state) => {
+    builder.addCase(getLocation.fulfilled, (state, { payload }) => {
+      state.locationData = payload.data;
       state.isLoading = false;
     });
   },

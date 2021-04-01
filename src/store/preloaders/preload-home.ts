@@ -1,5 +1,5 @@
-import { Store, searchLocation } from '@store';
+import { Store, getLocation } from '@store';
 
 export const preloadHome = async ({ dispatch }: Store) => {
-  await dispatch(searchLocation({ query: 'london' }));
+  await dispatch(getLocation('1252431'));
 };
