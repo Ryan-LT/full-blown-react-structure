@@ -1,8 +1,16 @@
+import {
+  TLocationData,
+  TSearchRequest,
+  TSearchResponse,
+} from '@types';
 import { AxiosInstance } from 'axios';
 
 export const createApi = (client: AxiosInstance) => ({
   get: {
-    query: (params: any) => client.get('/location/2487956/', { params }),
+    search: (params: TSearchRequest) =>
+      client.get<TSearchResponse>('/location/search/', { params }),
+    location: (woeid: string) =>
+      client.get<TLocationData>(`/location/search/${woeid}`),
   },
 });
 
