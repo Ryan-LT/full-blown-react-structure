@@ -19,7 +19,7 @@ export const getLocation = createAsyncThunk<
 { data: TLocationData },
 string,
 ThunkApiConfig
->('home/query', (payload, { extra: { api } }) => api.get.location(payload));
+>('home/getLocation', (payload, { extra: { api } }) => api.get.location(payload));
 
 export const { reducer: homeReducer } = createSlice({
   name: 'home',
@@ -45,12 +45,11 @@ export const { reducer: homeReducer } = createSlice({
     builder.addCase(getLocation.pending, (state) => {
       state.isLoading = true;
     });
-    builder.addCase(searchLocation.rejected, (state) => {
+    builder.addCase(getLocation.rejected, (state) => {
       state.error = 'There are some issues when getting data';
       state.isLoading = false;
     });
-    builder.addCase(searchLocation.fulfilled, (state, { payload }) => {
-      state.searchResults = [...payload.data];
+    builder.addCase(getLocation.fulfilled, (state) => {
       state.isLoading = false;
     });
   },
