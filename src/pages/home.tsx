@@ -9,17 +9,17 @@ const Home: FunctionComponent = () => {
   return (
     <div className="page-home">
       <SearchSelect />
-      <h1>
-        {locationData?.title}
-        ,
-        {' '}
-        {locationData?.parent.title}
-      </h1>
       {!isLoading ? (
-        <CardList />
+        <h1>
+          {locationData?.title}
+          ,
+          {' '}
+          {locationData?.parent.title}
+        </h1>
       ) : (
-        <h1>Getting weather...</h1>
+        <h1 className="loading-title">Getting weather...</h1>
       )}
+      <CardList />
     </div>
   );
 };

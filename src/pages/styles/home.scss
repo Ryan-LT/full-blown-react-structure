@@ -2,6 +2,9 @@
   max-width: 70vw;
   margin: 0 auto;
   display: block;
+  .loading-title {
+    color: gray;
+  }
   @media screen and (max-width: 540px) {
     max-width: 100vw;
   }
