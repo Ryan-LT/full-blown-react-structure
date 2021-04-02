@@ -3,7 +3,15 @@
   margin: 0 auto;
   display: block;
   .search-box {
+    width: 300px;
     margin-bottom: 1rem;
+    .search-input {
+      width: 200px;
+      height: 20px;
+      font-size: 1.25rem;
+      border-radius: 5px;
+      border-color: rgb(196, 196, 196);
+    }
   }
   .data-list {
     display: flex;

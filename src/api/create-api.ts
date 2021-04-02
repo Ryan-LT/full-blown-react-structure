@@ -9,7 +9,7 @@ export const createApi = (client: AxiosInstance) => ({
   get: {
     search: (params: TSearchRequest) =>
       client.get<TSearchResponse>('/location/search/', { params }),
-    location: (woeid: string) =>
+    location: (woeid: number) =>
       client.get<TLocationData>(`/location/${woeid}/`),
   },
 });
