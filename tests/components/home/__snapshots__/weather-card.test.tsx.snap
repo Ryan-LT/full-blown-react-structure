@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="weather-card"
+  >
+    <p
+      data-testid="card-day"
+    >
+      Friday
+    </p>
+    <p
+      data-testid="max-temp"
+    >
+      Max:23.0° C
+    </p>
+    <p
+      data-testid="min-temp"
+    >
+      Min:16.0° C
+    </p>
+  </div>
+</DocumentFragment>
+`;
