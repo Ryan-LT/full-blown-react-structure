@@ -7,8 +7,8 @@ import { useSelector } from 'react-redux';
 import { State } from '@store';
 
 type WeatherCardProp = Pick<
-  TWeather,
-  'applicable_date' | 'min_temp' | 'max_temp'
+TWeather,
+'applicable_date' | 'min_temp' | 'max_temp'
 >;
 
 export const WeatherCard: FunctionComponent<WeatherCardProp> = ({

@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FunctionComponent, ReactElement } from 'react';
 import axios from 'axios';
 import { Provider } from 'react-redux';
 import { RouterProvider } from 'react-router5';
@@ -11,15 +11,12 @@ const client = axios.create();
 configureClient(client);
 const api = createApi(client);
 
-export const store = createStore({ router, api });
-
+const store = createStore({ router, api });
 configureRouter(store);
 
-const Providers: FC = ({ children }) => (
+const Providers: FunctionComponent = ({ children }) => (
   <Provider store={store}>
-    <RouterProvider router={router}>
-      {children}
-    </RouterProvider>
+    <RouterProvider router={router}>{children}</RouterProvider>
   </Provider>
 );
 
