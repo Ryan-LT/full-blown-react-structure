@@ -5,13 +5,15 @@ import '@testing-library/jest-dom';
 
 afterEach(cleanup);
 
-it('should take a snapshot', () => {
-  const { asFragment } = render(<Loader />);
+describe('<Loader />', () => {
+  it('should take a snapshot', () => {
+    const { asFragment } = render(<Loader />);
 
-  expect(asFragment()).toMatchSnapshot();
-});
+    expect(asFragment()).toMatchSnapshot();
+  });
 
-it('should render without issue', () => {
-  const component = render(<Loader />);
-  expect(component).toBeTruthy();
+  it('should render without issue', () => {
+    const component = render(<Loader />);
+    expect(component).toBeTruthy();
+  });
 });

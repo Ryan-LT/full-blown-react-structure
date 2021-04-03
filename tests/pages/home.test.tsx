@@ -1,18 +1,20 @@
 import React from 'react';
+import '@testing-library/jest-dom';
 import { Home } from '@pages';
 import { cleanup, render } from '../renderTest';
-import '@testing-library/jest-dom';
 
 afterEach(cleanup);
 
-it('should take a snapshot', () => {
-  const { asFragment } = render(<Home />);
+describe('<Home />', () => {
+  it('should take a snapshot', () => {
+    const { asFragment } = render(<Home />);
 
-  expect(asFragment()).toMatchSnapshot();
-});
+    expect(asFragment()).toMatchSnapshot();
+  });
 
-it('should render without errors', () => {
-  const component = render(<Home />);
+  it('should render without errors', () => {
+    const component = render(<Home />);
 
-  expect(component).toBeTruthy();
+    expect(component).toBeTruthy();
+  });
 });

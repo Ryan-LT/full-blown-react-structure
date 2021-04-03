@@ -5,13 +5,15 @@ import '@testing-library/jest-dom';
 
 afterEach(cleanup);
 
-it('should take a snapshot', () => {
-  const { asFragment } = render(<RouterView routes={[]} />);
+describe('<RouteView />', () => {
+  it('should take a snapshot', () => {
+    const { asFragment } = render(<RouterView routes={[]} />);
 
-  expect(asFragment()).toMatchSnapshot();
-});
+    expect(asFragment()).toMatchSnapshot();
+  });
 
-it('should render without issue', () => {
-  const component = render(<RouterView routes={[]} />);
-  expect(component).toBeTruthy();
+  it('should render without issue', () => {
+    const component = render(<RouterView routes={[]} />);
+    expect(component).toBeTruthy();
+  });
 });
