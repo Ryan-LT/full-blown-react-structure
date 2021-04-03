@@ -13,12 +13,12 @@ exports[`should take a snapshot 1`] = `
     <p
       data-testid="max-temp"
     >
-      Max:23.0° C
+      Max: 23.0° C
     </p>
     <p
       data-testid="min-temp"
     >
-      Min:16.0° C
+      Min: 16.0° C
     </p>
   </div>
 </DocumentFragment>

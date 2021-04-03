@@ -26,11 +26,13 @@ export const WeatherCard: FunctionComponent<WeatherCardProp> = ({
           <p data-testid="card-day">{Weekday[day]}</p>
           <p data-testid="max-temp">
             Max:
+            {' '}
             {maxTemp.toFixed(1)}
             &deg; C
           </p>
           <p data-testid="min-temp">
             Min:
+            {' '}
             {minTemp.toFixed(1)}
             &deg; C
           </p>
