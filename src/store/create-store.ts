@@ -5,12 +5,16 @@ import { store } from 'src/renderApp';
 import { homeReducer } from '@store';
 import { Api } from '@api';
 
-export const createStore = (thunkExtraAguments: ThunkExtraAguments) =>
+export const createStore = (
+  thunkExtraAguments: ThunkExtraAguments,
+  preloadedState?: any,
+) =>
   configureStore({
     reducer: {
       router: router5Reducer,
       home: homeReducer,
     },
+    preloadedState,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware<{
         serializableCheck: boolean;

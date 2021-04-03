@@ -14,6 +14,7 @@ module.exports = {
     '@store': '<rootDir>/src/store',
     '@router': '<rootDir>/src/router',
     '@types': '<rootDir>/src/types',
+    '@utils': '<rootDir>/src/utils',
     '\\.(css|scss)$': '<rootDir>/tests/styleMock.ts',
   },
   globals: {

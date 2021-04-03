@@ -22,7 +22,7 @@
       "@types": ["./src/types"],
       "@router": ["./src/router"],
       "@pages": ["./src/pages"],
-      "@helpers": ["./src/helpers"],
+      "@utils": ["./src/utils"],
       "@services": ["./src/services"],
       "@components": ["./src/components"],
       "@constants": ["./src/constants"],
@@ -33,7 +33,9 @@
     "./src/**/*.ts",
     "./src/**/*.tsx",
     "./tests/**/*.ts",
-    "./tests/**/*.tsx"
+    "./tests/**/*.tsx",
+    "./tests/**/**/*.ts",
+    "./tests/**/**/*.tsx",
   ],
   "exclude": ["./node_modules/**/*", "./dist/**/*", "./build/**/*", "./config"]
 }
