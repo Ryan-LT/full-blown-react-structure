@@ -1,17 +1,17 @@
 import React from 'react';
-import { Loader } from '@components';
+import { RouterView } from '@components';
 import { cleanup, render } from '../../renderTest';
 import '@testing-library/jest-dom';
 
 afterEach(cleanup);
 
 it('should take a snapshot', () => {
-  const { asFragment } = render(<Loader />);
+  const { asFragment } = render(<RouterView routes={[]} />);
 
   expect(asFragment()).toMatchSnapshot();
 });
 
 it('should render without issue', () => {
-  const component = render(<Loader />);
+  const component = render(<RouterView routes={[]} />);
   expect(component).toBeTruthy();
 });

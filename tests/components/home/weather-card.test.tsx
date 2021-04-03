@@ -7,7 +7,7 @@ afterEach(cleanup);
 
 it('should take a snapshot', () => {
   const testProps = {
-    applicable_date: new Date().toString(),
+    applicable_date: 'Fri Apr 02 2021 17:18:04 GMT+0700',
     min_temp: 16,
     max_temp: 23,
   };

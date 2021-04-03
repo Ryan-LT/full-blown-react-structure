@@ -4,7 +4,6 @@ module.exports = {
   roots: ['<rootDir>/src', '<rootDir>/tests'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
-    '.+\\.(css|scss)$': 'jest-css-modules-transform',
   },
   setupFilesAfterEnv: ['jest-extended', '@testing-library/jest-dom'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
@@ -15,6 +14,7 @@ module.exports = {
     '@store': '<rootDir>/src/store',
     '@router': '<rootDir>/src/router',
     '@types': '<rootDir>/src/types',
+    '\\.(css|scss)$': '<rootDir>/tests/styleMock.ts',
   },
   globals: {
     'ts-jest': {
