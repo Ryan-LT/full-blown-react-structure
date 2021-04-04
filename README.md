@@ -7,6 +7,7 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#side-notes">Side notes</a></li>
       </ul>
     </li>
     <li>
@@ -36,7 +37,7 @@
 Screenshot
 ![image](https://user-images.githubusercontent.com/54348153/113500872-aea3fa80-954b-11eb-82ab-eca85c7bfeb7.png)
 
-This project is build in the purpose of completing [NAB](https://www.nab.com.au/ "NAB") Front-end developer assignment.
+This project is build in the purpose of completing [NAB](https://www.nab.com.au/ "NAB") Front-end job assignment.
 
 ### Built With
 * [Webpack](https://webpack.js.org//)
@@ -47,7 +48,6 @@ This project is build in the purpose of completing [NAB](https://www.nab.com.au/
 * [Immerjs](https://github.com/immerjs/immer/)
 * [React-Router5](https://router5.js.org//)
 * [Axios](https://github.com/axios/axios/)
-
 
 ### Project Structure
 + husky
@@ -66,6 +66,17 @@ This project is build in the purpose of completing [NAB](https://www.nab.com.au/
     * pages
     * store
 
+### Side notes
+There is another branch called [without-router5](https://github.com/thinhlesdev/simple-weather-forecast/tree/without-router5) which not included router5.
+The master branch otherwise is included with router5 and preload data mechanism. Data will be fetch before user visit home page.
+[without-router5](https://github.com/thinhlesdev/simple-weather-forecast/tree/without-router5) branch is more dynamic, is will load data asynchronously after user visiting.
+
+Unit-test cover all components, redux actions and redux store.
+API mock was enabled by [axios-mock-adapter](https://www.npmjs.com/package/axios-mock-adapter) which is dead simple to use :)
+
+Api fetching is proxy in webpack config.
+
+Since this project is develop using typescripts and ts-loader is used. So it skips Babel.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -101,7 +112,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Commit
 * This project is setup with [commit-lint](https://github.com/conventional-changelog/commitlint) and follow conventional commit.
-* Commit-lint will run by husky by every commits message so please follow this rule [here](https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/README.md)
+* Commit message will be checked by husky so please follow this rule [here](https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/README.md)
 * Make sure all unit-tests are pass and type are properly defined - they will be verify by using husky in every commits.
 
 ## Usage
