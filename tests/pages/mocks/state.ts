@@ -5,7 +5,7 @@ export const state: DeepPartial<State> = {
   home: {
     isSearching: false,
     isLoading: false,
-    error: '',
+    error: false,
     searchResults: [
       {
         title: 'London',
