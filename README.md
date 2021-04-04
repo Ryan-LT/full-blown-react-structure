@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Screenshot
+![image](https://user-images.githubusercontent.com/54348153/113500872-aea3fa80-954b-11eb-82ab-eca85c7bfeb7.png)
 
 ### Built With
 * [Webpack](https://webpack.js.org//)
