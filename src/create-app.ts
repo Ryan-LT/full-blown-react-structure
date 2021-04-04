@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { configureClient, createApi } from '@api';
-import { configureRouter, router } from '@router';
 import { createStore, Store } from '@store';
 
 export const createApp = (preloadedState?: any): Store => {
@@ -8,9 +7,7 @@ export const createApp = (preloadedState?: any): Store => {
   configureClient(client);
   const api = createApi(client);
 
-  const store = createStore({ router, api }, preloadedState);
-
-  configureRouter(store);
+  const store = createStore({ api }, preloadedState);
 
   return store;
 };

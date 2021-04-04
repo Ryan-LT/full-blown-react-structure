@@ -80,8 +80,10 @@ exports[`<Home /> Simple Render should take a snapshot 1`] = `
         </div>
       </div>
     </div>
-    <h1>
-      , 
+    <h1
+      class="loading-title"
+    >
+      Getting weather...
     </h1>
     <div
       class="data-list"

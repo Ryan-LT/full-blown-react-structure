@@ -1,6 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { router5Reducer } from 'redux-router5';
-import { Router } from 'router5';
 import { store } from 'src/renderApp';
 import { homeReducer } from '@store';
 import { Api } from '@api';
@@ -11,7 +9,6 @@ export const createStore = (
 ) =>
   configureStore({
     reducer: {
-      router: router5Reducer,
       home: homeReducer,
     },
     preloadedState,
@@ -29,7 +26,7 @@ export const createStore = (
 
 export type Store = ReturnType<typeof createStore>;
 export type State = ReturnType<typeof store.getState>;
-export type ThunkExtraAguments = { router: Router; api: Api };
+export type ThunkExtraAguments = { api: Api };
 export type ThunkApiConfig = {
   extra: ThunkExtraAguments;
 };

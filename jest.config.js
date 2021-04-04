@@ -12,7 +12,6 @@ module.exports = {
     '@api': '<rootDir>/src/api',
     '@pages': '<rootDir>/src/pages',
     '@store': '<rootDir>/src/store',
-    '@router': '<rootDir>/src/router',
     '@types': '<rootDir>/src/types',
     '@utils': '<rootDir>/src/utils',
     '\\.(css|scss)$': '<rootDir>/tests/styleMock.ts',

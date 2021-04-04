@@ -20,7 +20,6 @@
       "@store": ["./src/store"],
       "@tests": ["./src/tests"],
       "@types": ["./src/types"],
-      "@router": ["./src/router"],
       "@pages": ["./src/pages"],
       "@utils": ["./src/utils"],
       "@services": ["./src/services"],

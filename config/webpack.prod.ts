@@ -62,7 +62,7 @@ const config: webpack.Configuration = {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/](react|react-dom|axios|redux|react-redux|react-router5)[\\/]/,
+          test: /[\\/]node_modules[\\/](react|react-dom|axios|redux|react-redux)[\\/]/,
           name: 'vendors',
           chunks: 'all',
           enforce: true,

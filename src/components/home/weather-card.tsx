@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { Fragment, FunctionComponent } from 'react';
 import { TWeather, Weekday } from '@types';
 import { Loader } from '@components';
 
