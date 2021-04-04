@@ -1,23 +1,14 @@
 import { PayloadAction } from '@reduxjs/toolkit';
 import {
-  initialState,
-  homeReducer,
-  createStore,
-  searchLocation,
-  getLocation,
+  initialState, homeReducer, searchLocation, getLocation,
 } from '@store';
-import { router } from '@router';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { configureClient, createApi } from '@api';
+import { createApp } from '../../../src/create-app';
 
 const mock = new MockAdapter(axios);
 
-const client = axios.create();
-configureClient(client);
-const api = createApi(client);
-
-const store = createStore({ router, api });
+const store = createApp();
 
 describe('Home Reducer', () => {
   test('should return initial state on first run', () => {
