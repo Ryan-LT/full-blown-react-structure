@@ -6,6 +6,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
       </ul>
     </li>
     <li>
@@ -25,8 +26,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+Screenshot
 ![image](https://user-images.githubusercontent.com/54348153/113500872-aea3fa80-954b-11eb-82ab-eca85c7bfeb7.png)
+
+This project is build in the purpose of completing [NAB](https://www.nab.com.au/ "NAB") Front-end developer assignment.
 
 ### Built With
 * [Webpack](https://webpack.js.org//)
@@ -37,6 +40,24 @@
 * [Immerjs](https://github.com/immerjs/immer/)
 * [React-Router5](https://router5.js.org//)
 * [Axios](https://github.com/axios/axios/)
+
+
+### Project Structure
++ husky
++ config
++ src
+    + api
+    + assets
+    + components
+    + pages
+    + router
+    + store
+    + types
+    + ultils
++ tests
+    * components
+    * pages
+    * store
 
 
 <!-- GETTING STARTED -->
@@ -65,8 +86,6 @@ This is an example of how to list things you need to use the software and how to
    ```
 <!-- USAGE -->
 ## Usage
-
-This project is build in the purpose of completing [NAB](https://www.nab.com.au/ "NAB") Front-end developer assignment.
 
 1. To run project on your local machine
    ```sh
