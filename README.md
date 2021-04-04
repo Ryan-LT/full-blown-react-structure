@@ -16,6 +16,13 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#development">Development</a>
+      <ul>
+        <li><a href="#coding">Coding</a></li>
+        <li><a href="#commit">Commit</a></li>
+      </ul>
+    </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -85,6 +92,18 @@ This is an example of how to list things you need to use the software and how to
    npm install
    ```
 <!-- USAGE -->
+## Development
+
+### Coding
+* Typescripts is strictly be used in this project
+* Code style is checked by eslint with [airbnb-typescript](https://www.npmjs.com/package/eslint-config-airbnb-typescript) plugin
+* Code format by prettier, prettier extention is recommend to install
+
+### Commit
+* This project is setup with [commit-lint](https://github.com/conventional-changelog/commitlint) and follow conventional commit.
+* Commit-lint will run by husky by every commits message so please follow this rule [here](https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/README.md)
+* Make sure all unit-tests are pass and type are properly defined - they will be verify by using husky in every commits.
+
 ## Usage
 
 1. To run project on your local machine
