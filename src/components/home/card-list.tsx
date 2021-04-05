@@ -10,7 +10,7 @@ export const CardList: FunctionComponent = () => {
 
   return (
     <div className="data-list">
-      {locationData?.consolidated_weather.map((item) => {
+      {locationData?.consolidated_weather.slice(0, 5).map((item) => {
         const { id } = item;
         return <WeatherCard key={id} {...item} />;
       })}
