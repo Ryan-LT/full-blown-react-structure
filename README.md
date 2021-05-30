@@ -34,7 +34,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This project is build in the purpose of completing [NAB](https://www.nab.com.au/ "NAB") Front-end job assignment.
+
 
 Screenshot
 ![image](https://user-images.githubusercontent.com/54348153/113500872-aea3fa80-954b-11eb-82ab-eca85c7bfeb7.png)
